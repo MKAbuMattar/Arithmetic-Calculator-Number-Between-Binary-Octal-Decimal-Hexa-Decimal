@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Arithmetic Calculator Number Between: Binary, Octal, Decimal, Hexa-Decimal </title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300'>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	<div class="calculator">
+
+		<div class="choose">
+			<p>First Number Input in :</p>
+			<form>
+				<input class="ip" id="bin" type="radio" name="input" value="bin" onclick="setr();dis();disbutton();">
+				Binary&nbsp;
+				<input class="ip" id="oct" type="radio" name="input" value="oct" onclick="setr();dis();disbutton();">
+				Octal&nbsp;
+				<input class="ip" id="dec" type="radio" name="input" value="dec" onclick="setr();dis();disbutton();">
+				Decimal&nbsp;
+				<input class="ip" id="hex" type="radio" name="input" value="hex" onclick="setr();dis();disbutton();">
+				Hexa-decimal&nbsp;
+			</form>
+			<p>Second Number Input in :</p>
+			<form>
+				<input class="ip" id="opbin" type="radio" name="input" value="bin"> Binary&nbsp;
+				<input class="ip" id="opoct" type="radio" name="input" value="oct"> Octal&nbsp;
+				<input class="ip" id="opdec" type="radio" name="input" value="dec"> Decimal&nbsp;
+				<input class="ip" id="ophex" type="radio" name="input" value="hex"> Hexa-decimal&nbsp;
+			</form>
+			<p>Output in :</p>
+			<form>
+				<input class="ip" id="fbin" type="radio" name="input" value="bin"> Binary&nbsp;
+				<input class="ip" id="fdec" type="radio" name="input" value="oct"> Octal&nbsp;
+				<input class="ip" id="foct" type="radio" name="input" value="dec"> Decimal&nbsp;
+				<input class="ip" id="fhex" type="radio" name="input" value="hex"> Hexa-decimal&nbsp;
+			</form>
+			<p>Operation :</p>
+			<form>
+				<input class="ip" id="add" type="radio" name="input" value="Add">+ Add&nbsp;
+				<input class="ip" id="sub" type="radio" name="input" value="Subtract">- Subtract&nbsp;
+				<input class="ip" id="mul" type="radio" name="input" value="Multiply">× Multiply&nbsp;
+				<input class="ip" id="div" type="radio" name="input" value="Divide">÷ Divide&nbsp;
+			</form>
+		</div>
+		<br />
+
+		<form id="format">
+			<input class="box input" id="box1" type="text" placeholder="First Number" onclick="" /><br />
+			<input class="box input" id="box2" type="text" placeholder="Second Number" />
+		</form>
+
+		<div class="ans">
+			Answer &#61; <span id="ans"></span>
+		</div>
+
+		<br />
+
+		<form class="button">
+			<input type="button" class="clear" value="Submit" onclick="process();" />
+			<input type="button" class="clear" value="Clear" onclick="clr();" />
+		</form>
+
+	</div>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
